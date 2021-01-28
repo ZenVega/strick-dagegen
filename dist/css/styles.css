@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #FFFDFD;
+  font-family: 'Cabin Condensed', sans-serif; }
+
+h1 {
+  font-size: 48px; }
+
+/* PREVIEW SECTION  */
+.preview-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #A06873;
+  background-image: linear-gradient(to bottom right, #E0BEC4 50%, #A06873 50%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  width: 80%; }
+  header button, header a, header span {
+    all: unset;
+    font-size: 24px;
+    font-weight: bold;
+    color: #554C49; }
+
+.preview-img {
+  height: 65%;
+  max-height: 60vw;
+  border-radius: 50%; }
+
+.preview-section-title {
+  position: absolute;
+  right: 15%;
+  top: 77.5%; }
+
+/* DESCRIPTION SECTION */
+.desription-section {
+  background-color: #A06873;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px; }
+
+.project-dedscription {
+  width: 70%;
+  font-size: 35px; }

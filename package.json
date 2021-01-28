@@ -1,0 +1,24 @@
+{
+  "name": "strick-dagegen",
+  "version": "1.0.0",
+  "description": "Webside to pick up beatiful knitting projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenVega/strick-dagegen.git"
+  },
+  "author": "Urs Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZenVega/strick-dagegen/issues"
+  },
+  "homepage": "https://github.com/ZenVega/strick-dagegen#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
