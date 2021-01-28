@@ -5,13 +5,19 @@ const ruBtn = document.querySelector('#ru-btn')
 const deBtn = document.querySelector('#de-btn')
 const langBtns = [engBtn, ruBtn, deBtn]
 
-const aboutBtn = document.querySelector('#about')
+
+const aboutBtn = document.querySelector('#about-btn')
+const galeryBtn = document.querySelector('#galery-btn')
+const contactBtn = document.querySelector('#contact-btn')
+const impressumBtn = document.querySelector('#impressum-btn')
+
 
 const txtColor1 = '#FFFDFD'
 const txtColor2 = '#554C49'
 
 const aboutTxt = document.querySelector('#about-text')
-console.log(engBtn.innerHTML)
+
+
 
 const switchLanguage = (target) => {
 
@@ -39,6 +45,10 @@ const switchLanguage = (target) => {
 
 const replaceHtml = (lang) => {
   aboutTxt.innerHTML = langPack[lang].about
+  aboutBtn.innerHTML = langPack[lang].buttons.about
+  galeryBtn.innerHTML = langPack[lang].buttons.galery
+  contactBtn.innerHTML = langPack[lang].buttons.contact
+  impressumBtn.innerHTML = langPack[lang].buttons.impressum
 }
 
 langBtns.forEach(btn => btn.addEventListener('click', e => switchLanguage(e.target)))
