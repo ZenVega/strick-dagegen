@@ -1,0 +1,21 @@
+$bg-color-1:#A06873;
+$bg-color-2:#E0BEC4;
+$txt-color:#FFFDFD;
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+/* PREVIEW SECTION  */
+
+.preview-section{
+  background-color: $bg-color-1;
+  background-image: linear-gradient(to bottom right, #E0BEC4 50%, #A06873 50% );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
