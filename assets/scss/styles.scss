@@ -84,3 +84,9 @@ header{
   font-size: 35px;
 }
 
+/* CONTACT SECTION */
+.contact-section{
+  background-color: $bg-color-2;
+  color: $txt-color-2 ;
+  @include flexbox(column);
+}

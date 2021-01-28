@@ -64,3 +64,12 @@ header {
 #about-text {
   width: 70%;
   font-size: 35px; }
+
+/* CONTACT SECTION */
+.contact-section {
+  background-color: #E0BEC4;
+  color: #554C49;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }

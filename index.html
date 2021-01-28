@@ -52,13 +52,15 @@
 
   <section class="projects-section" id="galerie"></section>
 
-  <section class="contact-section" id="kontakt">
+  <section class="contact-section" id="contact">
     <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
-    <form action="">
-      <input type="text">
-      <input type="text">
+    <form action="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="email" placeholder="mail">
       <textarea name="" id="" cols="30" rows="10"></textarea>
-      <input type="submit">
+      <input type="file" name="myfile" placeholder="Upload file">
+      <div class="data-netlify-recaptcha"></div>
+      <input type="submit" value="Send">
     </form>
   </section>
 
