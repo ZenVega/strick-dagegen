@@ -1,3 +1,9 @@
+:root{
+  --bg-color-1:#A06873;
+  --bg-color-2:#E5E5E5;
+  --txt-color:#FFFDFD;
+}
+
 *{
   box-sizing: border-box;
   margin:0;
