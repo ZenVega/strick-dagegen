@@ -2,12 +2,13 @@
 
 $bg-color-1:#A06873;
 $bg-color-2:#E0BEC4;
-$txt-color:#FFFDFD;
+$txt-color-1:#FFFDFD;
+$txt-color-2:#554C49;
 
-@mixin flexbox($direction) {
+@mixin flexbox($direction, $justify: center ) {
   display:flex;
   flex-direction:$direction;
-  justify-content: center;
+  justify-content: $justify;
   align-items: center;
 }
 
@@ -15,7 +16,7 @@ $txt-color:#FFFDFD;
   box-sizing: border-box;
   margin:0;
   padding:0;
-  color:$txt-color;
+  color:$txt-color-1;
   font-family: 'Cabin Condensed', sans-serif;
 }
 
@@ -33,6 +34,21 @@ h1{
   height: 100vh;
 }
 
+header{
+  @include flexbox(row, space-between);
+  position:absolute;
+  top:20px;
+  width: 80%;
+  
+  button, a, span{
+    all: unset;
+    font-size: 24px;
+    font-weight: bold;
+    color:$txt-color-2;
+  }
+  
+}
+
 .preview-img{
   height:65%;
   max-height: 60vw;
@@ -40,9 +56,9 @@ h1{
 }
 
 .preview-section-title{
-  position:relative;
-  left:25%;
-  top:-48px;
+  position:absolute;
+  right:15%;
+  top:77.5%;
 }
 
 /* DESCRIPTION SECTION */
