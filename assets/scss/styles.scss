@@ -1,21 +1,60 @@
+@import 'fonts';
+
 $bg-color-1:#A06873;
 $bg-color-2:#E0BEC4;
 $txt-color:#FFFDFD;
 
+@mixin flexbox($direction) {
+  display:flex;
+  flex-direction:$direction;
+  justify-content: center;
+  align-items: center;
+}
 
 *{
   box-sizing: border-box;
   margin:0;
   padding:0;
+  color:$txt-color;
+  font-family: 'Cabin Condensed', sans-serif;
 }
 
+h1{
+  font-size: 48px;
+}
 /* PREVIEW SECTION  */
 
 .preview-section{
+  @include flexbox(column);
   background-color: $bg-color-1;
   background-image: linear-gradient(to bottom right, #E0BEC4 50%, #A06873 50% );
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh;
+}
+
+.preview-img{
+  height:65%;
+  max-height: 60vw;
+  border-radius: 50%;
+}
+
+.preview-section-title{
+  position:relative;
+  left:25%;
+  top:-48px;
+}
+
+/* DESCRIPTION SECTION */
+
+.desription-section{
+  background-color: $bg-color-1;
+  @include flexbox(column);
+  text-align: center;
+  padding-top: 50px;
+}
+.project-dedscription{
+  width:70%;
+  font-size: 35px;
 }
 
