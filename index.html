@@ -15,10 +15,10 @@
     <header>
 
       <nav>
-        <a id="about-btn" href="#about-btn">über</a>
-        <a id="galery-btn" href="#galery-btn">galerie</a>
-        <a id="contact-btn" href="#contact-btn">kontakt</a>
-        <a id="impressum-btn" href="#impressum-btn">impressum</a>
+        <a id="about-btn" href="#about">über</a>
+        <a id="galery-btn" href="#galery">galerie</a>
+        <a id="contact-btn" href="#contact">kontakt</a>
+        <a id="impressum-btn" href="#impressum">impressum</a>
       </nav>
 
       <div class="lang-switch">
@@ -53,14 +53,20 @@
   <section class="projects-section" id="galerie"></section>
 
   <section class="contact-section" id="contact">
-    <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
-    <form action="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Name">
-      <input type="text" name="email" placeholder="mail">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <input type="file" name="myfile" placeholder="Upload file">
+    <form action="POST" data-netlify="true" class="contact-form">
+      <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
+      <label >name:
+        <input type="text" name="name">
+      </label>
+      <label >mail:
+        <input type="text" name="email">
+      </label>
+      <textarea name="" id="" cols="30" rows="10" placeholder="type here..."></textarea>
+      <label id="contact-file-input" >add a file
+        <input  type="file" name="myfile">
+      </label>
       <!-- <div class="data-netlify-recaptcha"></div> -->
-      <input type="submit" value="Send">
+      <input id="contact-submit" type="submit" value="Send">
     </form>
   </section>
 

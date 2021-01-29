@@ -5,11 +5,11 @@ $bg-color-2:#E0BEC4;
 $txt-color-1:#FFFDFD;
 $txt-color-2:#554C49;
 
-@mixin flexbox($direction, $justify: center ) {
+@mixin flexbox($direction, $justify: center, $align: center ) {
   display:flex;
   flex-direction:$direction;
   justify-content: $justify;
-  align-items: center;
+  align-items: $align;
 }
 
 *{
@@ -78,6 +78,7 @@ header{
   @include flexbox(column);
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 #about-text{
   width:70%;
@@ -89,4 +90,54 @@ header{
   background-color: $bg-color-2;
   color: $txt-color-2 ;
   @include flexbox(column);
+  min-height:500px;
+}
+
+#contact-header{
+  font-size: 30px;
+}
+
+.contact-form{
+  padding-top: 20px;
+  @include flexbox(column, center, left);
+  gap:5px;
+
+  label{
+    width:100%;
+    float:left;
+  }
+
+  input{
+    all:unset;
+    border-bottom:solid 2px $txt-color-1;
+    width: 80%;
+    float:right;
+  }
+  textarea{
+    all:unset;
+    border:solid;
+    padding:5px;
+    margin: 15px 0 10px 0;
+  }
+  
+}
+
+#contact-file-input{
+  all:unset;
+  border: 2px solid;
+  padding:3px 6px;
+  margin:5px;
+  align-self: center;
+
+  input{
+    display: none;
+  }
+}
+
+#contact-submit{
+  all:unset;
+  border:solid 2px;
+  align-self: center;
+  padding:3px 6px;
+  margin:5px;
 }

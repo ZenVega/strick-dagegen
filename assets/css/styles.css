@@ -59,7 +59,8 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 #about-text {
   width: 70%;
@@ -72,4 +73,45 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 500px; }
+
+#contact-header {
+  font-size: 30px; }
+
+.contact-form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 5px; }
+  .contact-form label {
+    width: 100%;
+    float: left; }
+  .contact-form input {
+    all: unset;
+    border-bottom: solid 2px #FFFDFD;
+    width: 80%;
+    float: right; }
+  .contact-form textarea {
+    all: unset;
+    border: solid;
+    padding: 5px;
+    margin: 15px 0 10px 0; }
+
+#contact-file-input {
+  all: unset;
+  border: 2px solid;
+  padding: 3px 6px;
+  margin: 5px;
+  align-self: center; }
+  #contact-file-input input {
+    display: none; }
+
+#contact-submit {
+  all: unset;
+  border: solid 2px;
+  align-self: center;
+  padding: 3px 6px;
+  margin: 5px; }
