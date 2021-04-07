@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./assets/js/startup.js"></script>
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <title>Strick Dagegen</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Strick Dagegen</title>
+  </head>
 
-<body>
+  <body>
+    
 
-  <section class="preview-section">
-    <header>
+      
+      <section class="section preview-section">
+        <div class="content-wrapper">
 
-      <nav>
-        <a id="about-btn" href="#about">über</a>
-        <a id="galery-btn" href="#galery">galerie</a>
-        <a id="contact-btn" href="#contact">kontakt</a>
-        <a id="impressum-btn" href="#impressum">impressum</a>
-      </nav>
+          <header>
+            
+            <nav>
+              <a id="about-btn" href="#about">über</a>
+              <a id="galery-btn" href="#galery">galerie</a>
+              <a id="contact-btn" href="#contact">kontakt</a>
+              <a id="impressum-btn" href="#impressum">impressum</a>
+            </nav>
+            
+            <div class="lang-switch">
+              <button id="de-btn">DE</button>
+              <span>/</span>
+              <button id="eng-btn">EN</button>
+              <span>/</span>
+              <button id="ru-btn">РУ</button>
+            </div>
+            
+          </header>
+          
+          
+          <img src="./assets/images/img0.jpg" alt="" class="preview-img">
+          <h1 class="preview-section-title">strickt dagegen</h1>
+          
+        </div>
+      </section>
+      
+      <section class="section desription-section" id="about">
+        <div class="content-wrapper">
 
-      <div class="lang-switch">
-        <button id="de-btn">DE</button>
-        <span>/</span>
-        <button id="eng-btn">EN</button>
-        <span>/</span>
-        <button id="ru-btn">РУ</button>
-      </div>
+          <p id="about-text">Ich war ungefähr 6 Jahre alt, als ich meinen ersten Puppenschal strickte. Es dauerte
+            gefühlt eine Ewigkeit. Damit es schneller geht, versuchte ich den Schal nach jeder neuen Reihe in die Länge zu
+            ziehen, aber er zog sich wieder zusammen...
+            <br> Wer hätte damals gedacht, welche Faszination und Leidenschaft für Maschen und Nadeln mich später mitreißen
+            wird. Ich liebe es, mit Wolle zu experimentieren, eigene Objekte zu kreieren. Die Stadt Berlin gibt meiner
+            Fantasie und meinem Humor laufend neues "Futter", ein kleines Skizzenbuch für neue Ideen ist mein treuer
+            Begleiter.
+            <br> Ich bin offen für individuelle Anfertigungen und habe damit bereits einige Erfahrungen gesammelt,
+            insbesondere im Bereich Therapie mit Kindern. Du kannst gerne Kontakt zu mir aufnehmen.
+          </p>
+        </div>
+      </section>
+      
+      <section class="section projects-section" id="galerie">
+        <div class="content-wrapper">
+          <h1 class="projects-section-title">Projekte</h1>
+          <div class="image-wrapper">
+            
+            
+          </div>
+        </div>
+      </section>
+      
+      <section class="section contact-section" id="contact">
+        <div class="content-wrapper">
 
-    </header>
-
-
-    <img src="./assets/images/alligator.jpg" alt="" class="preview-img">
-    <h1 class="preview-section-title">strickt dagegen</h1>
-
-  </section>
-
-  <section class="desription-section" id="about">
-    <p id="about-text">Ich war ungefähr 6 Jahre alt, als ich meinen ersten Puppenschal strickte. Es dauerte
-      gefühlt eine Ewigkeit. Damit es schneller geht, versuchte ich den Schal nach jeder neuen Reihe in die Länge zu
-      ziehen, aber er zog sich wieder zusammen...
-      <br> Wer hätte damals gedacht, welche Faszination und Leidenschaft für Maschen und Nadeln mich später mitreißen
-      wird. Ich liebe es, mit Wolle zu experimentieren, eigene Objekte zu kreieren. Die Stadt Berlin gibt meiner
-      Fantasie und meinem Humor laufend neues "Futter", ein kleines Skizzenbuch für neue Ideen ist mein treuer
-      Begleiter.
-      <br> Ich bin offen für individuelle Anfertigungen und habe damit bereits einige Erfahrungen gesammelt,
-      insbesondere im Bereich Therapie mit Kindern. Du kannst gerne Kontakt zu mir aufnehmen.
-    </p>
-  </section>
-
-  <section class="projects-section" id="galerie"></section>
-
-  <section class="contact-section" id="contact">
-    <form action="POST" data-netlify="true" class="contact-form">
-      <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
-      <label >name:
-        <input type="text" name="name">
-      </label>
-      <label >mail:
-        <input type="text" name="email">
-      </label>
-      <textarea name="" id="" cols="30" rows="10" placeholder="type here..."></textarea>
-      <label id="contact-file-input" >add a file
-        <input  type="file" name="myfile">
-      </label>
-      <!-- <div class="data-netlify-recaptcha"></div> -->
-      <input id="contact-submit" type="submit" value="Send">
-    </form>
-  </section>
-
-  <script src="./assets/data/langPack.js"></script>
-  <script src="./assets/js/main.js"></script>
-</body>
+          <form action="POST" data-netlify="true" class="contact-form">
+            <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
+            <label >name:
+              <input type="text" name="name">
+            </label>
+            <label >mail:
+              <input type="text" name="email">
+            </label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="type here..."></textarea>
+            <label id="contact-file-input" >add a file
+              <input  type="file" name="myfile">
+            </label>
+            <!-- <div class="data-netlify-recaptcha"></div> -->
+            <input id="contact-submit" type="submit" value="Send">
+          </form>
+        </div>
+      </section>
+      
+      <script src="./assets/data/langPack.js"></script>
+      <script src="./assets/js/main.js"></script>
+      <script src="./assets/js/startup.js"></script>
+    </div>
+  </body>
 
 </html>

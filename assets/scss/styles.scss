@@ -24,15 +24,24 @@ $txt-color-2:#554C49;
 h1{
   font-size: 48px;
 }
+
+.content-wrapper{
+  margin:0 auto;
+  max-width: 1200px;
+}
+
 /* PREVIEW SECTION  */
 
 .preview-section{
-  @include flexbox(column);
-  background-color: $bg-color-1;
-  background-image: linear-gradient(to bottom right, #E0BEC4 50%, #A06873 50% );
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100vh;
+  background-image: linear-gradient(to bottom right, #E0BEC4 50%, #A06873 50% );
+
+  .content-wrapper{
+    @include flexbox(column, center, center);
+    height: 100vh;
+  }
+
 }
 
 header{
@@ -60,15 +69,14 @@ header{
 
 
 .preview-img{
-  height:65%;
-  max-height: 60vw;
+  width:50%;
   border-radius: 50%;
 }
 
 .preview-section-title{
   position:absolute;
-  right:15%;
-  top:77.5%;
+  right:10%;
+  top:82.5%;
 }
 
 /* DESCRIPTION SECTION */
@@ -83,7 +91,29 @@ header{
 #about-text{
   width:70%;
   font-size: 35px;
+  margin: 0 auto;
 }
+
+
+/* PROJECT SECTION */
+
+.projects-section{
+  background-color: $bg-color-2;
+  @include flexbox(row);
+  flex-wrap: wrap;
+  text-align: center;
+  
+  .projects-section-title{
+    padding: 20px 0;
+
+  }
+  img{
+    max-width: 350px;
+    max-height: 350px;
+    margin:10px;
+  }
+}
+
 
 /* CONTACT SECTION */
 .contact-section{
