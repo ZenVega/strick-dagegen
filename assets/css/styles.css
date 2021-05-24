@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
 
 :root {
   --bg-color-1: #333; 
@@ -53,7 +53,7 @@ header{
 header button, header a, header span{
   all: unset;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: regular;
   color:var(--txt-color-2);
   padding-left:10px;
 }

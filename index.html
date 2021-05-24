@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet"> 
     <title>Strick Dagegen</title>
   </head>
 
@@ -70,13 +72,13 @@
       <section class="section contact-section" id="contact">
         <div class="content-wrapper">
 
-          <form action="POST" data-netlify="true" class="contact-form">
+          <form name="contact" method="POST" class="contact-form" netlify>
             <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
             <label >name:
               <input type="text" name="name">
             </label>
             <label >mail:
-              <input type="text" name="email">
+              <input required type="email" name="email">
             </label>
             <textarea name="" id="" cols="30" rows="10" placeholder="type here..."></textarea>
             <label id="contact-file-input" >add a file
@@ -85,6 +87,29 @@
             <!-- <div class="data-netlify-recaptcha"></div> -->
             <input id="contact-submit" type="submit" value="Send">
           </form>
+        </div>
+      </section>
+      
+      <section class="section impressum-section" id="contact">
+        <div class="content-wrapper">
+
+          <p>Impressum
+
+            Swetlana Nikitenko
+            Kreutzigerstr. 7
+            10247 Berlin
+            Deutschland
+            
+            Tel.: 01708657185
+            E-Mail: stricktdagegen@gmail.com
+            
+            USt. wird nicht ausgewiesen, da der Verkäufer Kleinunternehmer im Sinne des UStG ist.
+            
+            Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
+            
+            Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+            
+            Webdesign und Webentwicklung</p>
         </div>
       </section>
       
