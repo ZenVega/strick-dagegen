@@ -6,6 +6,15 @@ const langPack = {
       "galery":"gallery",
       "contact":"contact",
       "impressum":"impressum"
+    },
+    "projectSectionTitle": "Projekte",
+    "form":{
+      "title": "Write me a message",
+      "name": "name",
+      "mail": "mail",
+      "placeholder": "type here...",
+      "file": "add a file",
+      "send": "send"
     }
   },
   "de": {
@@ -15,6 +24,15 @@ const langPack = {
       "galery":"gallerie",
       "contact":"kontakt",
       "impressum":"impressum"
+    },
+    "projectSectionTitle": "projects",
+    "form":{
+      "title": "Schreib mir eine Nachricht",
+      "name": "Name",
+      "mail": "E-Mail",
+      "placeholder": "Nachricht...",
+      "file": "Dateianhang",
+      "send": "Absenden"
     }
   },
   "ru": {
@@ -24,6 +42,15 @@ const langPack = {
       "galery":"галерея",
       "contact":"обращаться по адресу",
       "impressum":"оттиск"
+    },
+    "projectSectionTitle": "Проекты",
+    "form":{
+      "title": "Напишите мне сообщение",
+      "name": "Имя",
+      "mail": "почта",
+      "placeholder": "сообщение...",
+      "file": "файл",
+      "send": "Отправить"
     }
   }
 }

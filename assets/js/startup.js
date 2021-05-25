@@ -18,6 +18,8 @@ const changeStyle = id => {
     document.documentElement.style.setProperty('--bg-color-2', imgPack[id].bg1);
     document.documentElement.style.setProperty('--txt-color-2', imgPack[id].txt1);
 
+    txtColor2 = imgPack[id].txt1
+
 
     let imgArray = shuffledImages.map(id => {
       let img = document.createElement('img')

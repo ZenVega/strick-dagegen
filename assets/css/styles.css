@@ -13,7 +13,6 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  color:var(--txt-color-1);
   font-family: 'Cabin Condensed', sans-serif;
   scroll-behavior: smooth;
 }
@@ -61,7 +60,12 @@ header button, header a, header span{
 header button, header a{
   cursor: pointer;
 }
+
 header button:hover, header a:hover{
+  color:var(--txt-color-1);
+}
+
+#de-btn{
   color:var(--txt-color-1);
 }
 
@@ -75,6 +79,7 @@ header button:hover, header a:hover{
   position:absolute;
   right:10%;
   top:82.5%;
+  color:var(--txt-color-1);
 }
 
 /* DESCRIPTION SECTION */
@@ -112,6 +117,7 @@ header button:hover, header a:hover{
 }
 .projects-section-title{
   padding: 20px 0;
+  color:var(--txt-color-2);
 
 }
 .projects-section img{
@@ -124,7 +130,7 @@ header button:hover, header a:hover{
 /* CONTACT SECTION */
 .contact-section{
   background-color: var(--bg-color-2);
-  color: var(--txt-color-2) ;
+  color: var(--txt-color-2) !important ;
   display:  flex;
   flex-direction: column;
   justify-content: center;
@@ -153,7 +159,7 @@ header button:hover, header a:hover{
 
 .contact-form input{
   all:unset;
-  border-bottom:solid 2px var(--txt-color-1);
+  border-bottom:solid 2px var(--txt-color-2);
   width: 80%;
   float:right;
 }
@@ -184,4 +190,11 @@ header button:hover, header a:hover{
   align-self: center;
   padding:3px 6px;
   margin:5px;
+}
+
+/* IMPRESSUM SECTION */
+
+.impressum-section{
+  background-color: var(--bg-color-1);
+  color: var(--txt-color-1)
 }

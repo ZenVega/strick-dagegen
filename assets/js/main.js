@@ -13,9 +13,23 @@ const impressumBtn = document.querySelector('#impressum-btn')
 
 
 const txtColor1 = '#FFFDFD'
-const txtColor2 = '#554C49'
+let txtColor2 = '#554C49'
 
 const aboutTxt = document.querySelector('#about-text')
+const projectSectionTitle = document.querySelector(".projects-section-title")
+
+const contactHeader = document.querySelector("#contact-header")
+const contactName = document.querySelector("#contact-name")
+const contactMail = document.querySelector("#contact-mail")
+const contactFile = document.querySelector("#contact-file")
+const contactSend = document.querySelector("#contact-send")
+const contactMessage = document.querySelector("#contact-message")
+
+
+
+
+
+
 
 
 
@@ -49,6 +63,22 @@ const replaceHtml = (lang) => {
   galeryBtn.innerHTML = langPack[lang].buttons.galery
   contactBtn.innerHTML = langPack[lang].buttons.contact
   impressumBtn.innerHTML = langPack[lang].buttons.impressum
+  projectSectionTitle.innerHTML = langPack[lang].projectSectionTitle
+  contactHeader.innerHTML = langPack[lang].form.title
+  // contactName = document.querySelector("#contact-name")
+  // contactMail = document.querySelector("#contact-mail")
+  // contactFile = document.querySelector("#contact-file")
+  // contactSend = document.querySelector("#contact-send")
+  // contactMessage = document.querySelector("#contact-message")
 }
 
 langBtns.forEach(btn => btn.addEventListener('click', e => switchLanguage(e.target)))
+
+// "form":{
+//   "title": "Write me a message",
+//   "name": "name",
+//   "mail": "mail",
+//   "placeholder": "type here...",
+//   "file": "add a file",
+//   "send": "send"
+// }
