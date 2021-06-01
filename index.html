@@ -18,6 +18,13 @@
         <div class="content-wrapper">
 
           <header>
+            <div class="lang-switch">
+              <button id="de-btn">DE</button>
+              <span>/</span>
+              <button id="eng-btn">EN</button>
+              <span>/</span>
+              <button id="ru-btn">РУ</button>
+            </div>
             
             <nav>
               <a id="about-btn" href="#about">über</a>
@@ -26,13 +33,6 @@
               <a id="impressum-btn" href="#impressum">impressum</a>
             </nav>
             
-            <div class="lang-switch">
-              <button id="de-btn">DE</button>
-              <span>/</span>
-              <button id="eng-btn">EN</button>
-              <span>/</span>
-              <button id="ru-btn">РУ</button>
-            </div>
             
           </header>
           
@@ -74,17 +74,17 @@
 
           <form name="contact" method="POST" class="contact-form" netlify>
             <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
-            <label id="contact-name" >name:
+            <label id="contact-name" >Name:
               <input type="text" name="name">
             </label>
-            <label >mail:
+            <label id="contact-mail">E-Mail:
               <input required type="email" name="email">
             </label>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="type here..."></textarea>
-            <label id="contact-file-input" >add a file
+            <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Nachricht..."></textarea>
+            <label id="contact-file" >Dateianhang
               <input  type="file" name="myfile">
             </label>
-            <button id="contact-submit" type="submit" value="Send">Send</button>
+            <button id="contact-send" type="submit" value="Send">senden</button>
           </form>
         </div>
       </section>
@@ -92,23 +92,23 @@
       <section class="section impressum-section" id="contact">
         <div class="content-wrapper">
 
-          <p>Impressum
-
+          <h3>Impressum</h3>
+          <p>
             Swetlana Nikitenko
-            Kreutzigerstr. 7
-            10247 Berlin
-            Deutschland
+            <br>Kreutzigerstr. 7
+            <br>10247 Berlin
+            <br>Deutschland
             
-            Tel.: 01708657185
-            E-Mail: stricktdagegen@gmail.com
-            
+            <br>Tel.: 01708657185
+            <br>E-Mail: stricktdagegen@gmail.com
+            </p><p>
             USt. wird nicht ausgewiesen, da der Verkäufer Kleinunternehmer im Sinne des UStG ist.
             
-            Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
+            <br>Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
             
-            Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+            <br>Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
             
-            Webdesign und Webentwicklung</p>
+            <br>Webdesign und Webentwicklung: Dani Nikitenko / Urs Schmidt</p>
         </div>
       </section>
       

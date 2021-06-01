@@ -65,20 +65,10 @@ const replaceHtml = (lang) => {
   impressumBtn.innerHTML = langPack[lang].buttons.impressum
   projectSectionTitle.innerHTML = langPack[lang].projectSectionTitle
   contactHeader.innerHTML = langPack[lang].form.title
-  // contactName = document.querySelector("#contact-name")
-  // contactMail = document.querySelector("#contact-mail")
-  // contactFile = document.querySelector("#contact-file")
-  // contactSend = document.querySelector("#contact-send")
-  // contactMessage = document.querySelector("#contact-message")
+  contactName.innerHTML = langPack[lang].form.name + '<input type="text" name="name">'
+  contactMail.innerHTML = langPack[lang].form.mail + '<input required type="email" name="email">'
+  contactFile.innerHTML = langPack[lang].form.file + '<input  type="file" name="myfile">'
+  contactSend.innerHTML = langPack[lang].form.send
+  contactMessage.placeholder = langPack[lang].form.placeholder
 }
-
 langBtns.forEach(btn => btn.addEventListener('click', e => switchLanguage(e.target)))
-
-// "form":{
-//   "title": "Write me a message",
-//   "name": "name",
-//   "mail": "mail",
-//   "placeholder": "type here...",
-//   "file": "add a file",
-//   "send": "send"
-// }

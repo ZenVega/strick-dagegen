@@ -25,7 +25,7 @@ const langPack = {
       "contact":"kontakt",
       "impressum":"impressum"
     },
-    "projectSectionTitle": "projects",
+    "projectSectionTitle": "Projekte",
     "form":{
       "title": "Schreib mir eine Nachricht",
       "name": "Name",

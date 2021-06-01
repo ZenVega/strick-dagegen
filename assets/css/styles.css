@@ -43,18 +43,25 @@ h1{
 
 header{
   display:  flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   position:absolute;
   top:20px;
   width: 80%;
 }
+
 header button, header a, header span{
   all: unset;
   font-size: 24px;
   font-weight: regular;
   color:var(--txt-color-2);
   padding-left:10px;
+}
+
+header button, header span{
+  font-size: 12px;
+  padding-left:3px;
+  padding-top:4px;
 }
 
 header button, header a{
@@ -65,13 +72,24 @@ header button:hover, header a:hover{
   color:var(--txt-color-1);
 }
 
+nav{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.lang-switch{
+  min-width:95px;
+  align-self: flex-end;
+}
+
 #de-btn{
   color:var(--txt-color-1);
 }
 
 
 .preview-img{
-  width:50%;
+  width:50vh;
   border-radius: 50%;
 }
 
@@ -97,7 +115,7 @@ header button:hover, header a:hover{
 
 #about-text{
   width:70%;
-  font-size: 35px;
+  font-size: 30px;
   margin: 0 auto;
   color:var(--txt-color-1);
 }
@@ -123,6 +141,7 @@ header button:hover, header a:hover{
 .projects-section img{
   max-width: 350px;
   max-height: 350px;
+  width:90%;
   margin:10px;
 }
 
@@ -171,7 +190,7 @@ header button:hover, header a:hover{
   margin: 15px 0 10px 0;
 }
 
-#contact-file-input{
+#contact-file{
   all:unset;
   border: 2px solid;
   padding:3px 6px;
@@ -180,11 +199,11 @@ header button:hover, header a:hover{
 
 }
 
-#contact-file-input input{
+#contact-file input{
   display: none;
 }
 
-#contact-submit{
+#contact-send{
   all:unset;
   border:solid 2px;
   align-self: center;
@@ -196,5 +215,61 @@ header button:hover, header a:hover{
 
 .impressum-section{
   background-color: var(--bg-color-1);
-  color: var(--txt-color-1)
+  color: var(--txt-color-1);
+  padding:30px;
+}
+
+.impressum-section .content-wrapper{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.impressum-section h3{
+  width:20%;
+}
+
+.impressum-section p{
+  margin-top:10px;
+}
+
+.impressum-section p:nth-of-type(1){
+  width:30%;
+  font-size: 12px;
+}
+
+.impressum-section p:nth-of-type(2){
+  width:50%;
+  font-size: 12px;
+}
+
+@media only screen and (max-width:600px){
+  
+  .impressum-section h3{
+    width:100%;
+  }
+  .impressum-section p:nth-of-type(1){
+    width:50%;
+  }
+  
+  #about-text{
+    font-size: 20px;
+  }
+  header a{
+    font-size: 20px;
+  }
+  
+}
+
+@media only screen and (max-width:420px){
+  
+  .impressum-section p:nth-of-type(1), .impressum-section p:nth-of-type(2){
+    width:100%;
+  }
+  .impressum-section .content-wrapper{
+    flex-direction: column;
+  }
+
+  .preview-section-title{
+    right: unset;
+  }
 }
