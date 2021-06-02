@@ -1,22 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./assets/js/startup.js"></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Strick Dagegen</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet"> 
+    <title>Strick Dagegen</title>
+  </head>
 
-<body>
-  <div class="content-wrapper">
-    <h1>Hier entsteht eine Webseite von und für stricktdagegen</h1>
-    <iframe src="https://giphy.com/embed/Vdh9RKmGOQtxRxwvTC" width="480" height="480" frameBorder="0"
-      class="giphy-embed" allowFullScreen></iframe>
-  </div>
+  <body>
+    
 
-  <script src="./assets/js/main.js"></script>
-</body>
+      
+      <section class="section preview-section">
+        <div class="content-wrapper">
+
+          <header>
+            <div class="lang-switch">
+              <button id="de-btn">DE</button>
+              <span>/</span>
+              <button id="eng-btn">EN</button>
+              <span>/</span>
+              <button id="ru-btn">РУ</button>
+            </div>
+            
+            <nav>
+              <a id="about-btn" href="#about">über</a>
+              <a id="galery-btn" href="#galery">galerie</a>
+              <a id="contact-btn" href="#contact">kontakt</a>
+              <a id="impressum-btn" href="#impressum">impressum</a>
+            </nav>
+            
+            
+          </header>
+          
+          
+          <img src="./assets/images/img0.jpg" alt="" class="preview-img">
+          <h1 class="preview-section-title">strickt dagegen</h1>
+          
+        </div>
+      </section>
+      
+      <section class="section desription-section" id="about">
+        <div class="content-wrapper">
+
+          <p id="about-text">Ich war ungefähr 6 Jahre alt, als ich meinen ersten Puppenschal strickte. Es dauerte
+            gefühlt eine Ewigkeit. Damit es schneller geht, versuchte ich den Schal nach jeder neuen Reihe in die Länge zu
+            ziehen, aber er zog sich wieder zusammen...
+            <br> Wer hätte damals gedacht, welche Faszination und Leidenschaft für Maschen und Nadeln mich später mitreißen
+            wird. Ich liebe es, mit Wolle zu experimentieren, eigene Objekte zu kreieren. Die Stadt Berlin gibt meiner
+            Fantasie und meinem Humor laufend neues "Futter", ein kleines Skizzenbuch für neue Ideen ist mein treuer
+            Begleiter.
+            <br> Ich bin offen für individuelle Anfertigungen und habe damit bereits einige Erfahrungen gesammelt,
+            insbesondere im Bereich Therapie mit Kindern. Du kannst gerne Kontakt zu mir aufnehmen.
+          </p>
+        </div>
+      </section>
+      
+      <section class="section projects-section" id="galerie">
+        <div class="content-wrapper">
+          <h1 class="projects-section-title">Projekte</h1>
+          <div class="image-wrapper">
+            
+            
+          </div>
+        </div>
+      </section>
+      
+      <section class="section contact-section" id="contact">
+        <div class="content-wrapper">
+
+          <form name="contact" method="POST" class="contact-form" netlify>
+            <h2 id="contact-header">Schreib mir eine Nachricht:</h2>
+            <label id="contact-name" >Name:
+              <input type="text" name="name">
+            </label>
+            <label id="contact-mail">E-Mail:
+              <input required type="email" name="email">
+            </label>
+            <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Nachricht..."></textarea>
+            <label id="contact-file" >Dateianhang
+              <input  type="file" name="myfile">
+            </label>
+            <button id="contact-send" type="submit" value="Send">senden</button>
+          </form>
+        </div>
+      </section>
+      
+      <section class="section impressum-section" id="contact">
+        <div class="content-wrapper">
+
+          <h3>Impressum</h3>
+          <p>
+            Swetlana Nikitenko
+            <br>Kreutzigerstr. 7
+            <br>10247 Berlin
+            <br>Deutschland
+            
+            <br>Tel.: 01708657185
+            <br>E-Mail: stricktdagegen@gmail.com
+            </p><p>
+            USt. wird nicht ausgewiesen, da der Verkäufer Kleinunternehmer im Sinne des UStG ist.
+            
+            <br>Plattform der EU-Kommission zur Online-Streitbeilegung: https://ec.europa.eu/odr
+            
+            <br>Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+            
+            <br>Webdesign und Webentwicklung: Dani Nikitenko / Urs Schmidt</p>
+        </div>
+      </section>
+      
+      <script src="./assets/data/imgPack.js"></script>
+      <script src="./assets/data/langPack.js"></script>
+      <script src="./assets/js/main.js"></script>
+      <script src="./assets/js/startup.js"></script>
+    </div>
+  </body>
 
 </html>
