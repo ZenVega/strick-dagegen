@@ -1,7 +1,7 @@
 const previewImage = document.querySelector(".preview-img")
 const imageWrapper = document.querySelector(".image-wrapper")
 
-const imgAmount = 13
+const imgAmount = 10
 const imgIdArray = [...Array(imgAmount).keys()]
 
 let shuffledImages = imgIdArray

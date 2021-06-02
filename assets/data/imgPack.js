@@ -103,23 +103,7 @@ const imgPack = {
       "ru": "Связанный спицами осьминог"
     }
   },
-  10: {
-    "frontPage": false,
-    "alt": {
-      "de": "Gestricktes Gehirn",
-      "eng": "Knitted brain",
-      "ru": "Связанный спицами мозг"
-    }
-  },
-  11: {
-    "frontPage": false,
-    "alt": {
-      "de": "Gestricktes Gehirn",
-      "eng": "Knitted brain",
-      "ru": "Связанный спицами мозг"
-    }
-  },
-  12: {
+  9: {
     "frontPage": true,
     "bg1": "#D9B3B6",
     "bg2": "#784445",
