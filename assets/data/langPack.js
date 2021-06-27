@@ -7,7 +7,7 @@ const langPack = {
       "contact":"contact",
       "impressum":"impressum"
     },
-    "projectSectionTitle": "Projekte",
+    "projectSectionTitle": "projects",
     "form":{
       "title": "Write me a message",
       "name": "name",
