@@ -36,7 +36,7 @@ const imgPack = {
     "frontPage": true,
     "bg1": "#D2C8C6",
     "bg2": "#748761",
-    "txt1": "#333333",
+    "txt1": "#748761",
     "alt": {
       "de": "Gehäkelte Nähmaschine",
       "eng": "Crochet sewing machine",

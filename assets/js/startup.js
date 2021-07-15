@@ -12,11 +12,21 @@ let shuffledImages = imgIdArray
 
   
 const changeStyle = id => {
+  sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
   
   if(imgPack[id].frontPage){
-    document.documentElement.style.setProperty('--bg-color-1', imgPack[id].bg2);
-    document.documentElement.style.setProperty('--bg-color-2', imgPack[id].bg1);
-    document.documentElement.style.setProperty('--txt-color-2', imgPack[id].txt1);
+    const styleSheet = document.documentElement.style
+    styleSheet.setProperty('--bg-color-1', imgPack[id].bg2);
+    styleSheet.setProperty('--bg-color-2', imgPack[id].bg1);
+    styleSheet.setProperty('--txt-color-2', imgPack[id].txt1);
+
+    const hoverColor = 
+      imgPack[id].bg1 == "#568B5B"? "#1F4323":
+      imgPack[id].bg1 == "#E36A4F"? "#1D476B":
+      imgPack[id].bg1 == "#568B5B"? "#568B5B":
+      imgPack[id].bg1 == "#E35B4F"? "#C42A1C":
+      "#FFFDFD"
+    styleSheet.setProperty('--txt-color-hover', hoverColor);
 
     txtColor2 = imgPack[id].txt1
 
