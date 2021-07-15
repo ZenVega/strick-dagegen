@@ -5,7 +5,6 @@ const langPack = {
       "about":"about",
       "galery":"gallery",
       "contact":"contact",
-      "impressum":"impressum"
     },
     "projectSectionTitle": "projects",
     "form":{
@@ -23,7 +22,6 @@ const langPack = {
       "about":"über",
       "galery":"gallerie",
       "contact":"kontakt",
-      "impressum":"impressum"
     },
     "projectSectionTitle": "Projekte",
     "form":{
@@ -41,7 +39,6 @@ const langPack = {
       "about":"Обо мне",
       "galery":"галерея",
       "contact":"Контакты",
-      "impressum":"оттиск"
     },
     "projectSectionTitle": "Проекты",
     "form":{
