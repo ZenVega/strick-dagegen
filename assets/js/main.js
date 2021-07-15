@@ -4,7 +4,7 @@ const sections = document.querySelectorAll('.section')
 const engBtn = document.querySelector('#eng-btn')
 const ruBtn = document.querySelector('#ru-btn')
 const deBtn = document.querySelector('#de-btn')
-const langBtns = [engBtn, ruBtn, deBtn]
+const langBtns = document.querySelectorAll('.lg-btn')
 
 
 const aboutBtn = document.querySelector('#about-btn')
@@ -29,25 +29,26 @@ const contactMessage = document.querySelector("#contact-message")
 const switchLanguage = (target) => {
 
   langBtns.forEach(btn => {
-    btn.style.color = txtColor2
+    console.log(btn)
+    btn.classList.remove("button-active")
   })
   
   const id = target.id
   switch (id) {
     case "eng-btn":
-      engBtn.style.color = txtColor1
+      engBtn.classList.add("button-active")
       replaceHtml("eng")
       sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
       sections.forEach(section => section.style.fontWeight = 400)
       break;
     case "de-btn":
-      deBtn.style.color = txtColor1
+      deBtn.classList.add("button-active")
       replaceHtml("de")
       sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
       sections.forEach(section => section.style.fontWeight = 400)
       break;
     case "ru-btn":
-      ruBtn.style.color = txtColor1
+      ruBtn.classList.add("button-active")
       replaceHtml("ru")
       sections.forEach(section => section.style.fontFamily = "'Cabin Condensed', sans-serif")
       sections.forEach(section => section.style.fontWeight = 700)
