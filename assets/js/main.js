@@ -39,16 +39,19 @@ const switchLanguage = (target) => {
       engBtn.style.color = txtColor1
       replaceHtml("eng")
       sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
+      sections.forEach(section => section.style.fontWeight = 400)
       break;
     case "de-btn":
       deBtn.style.color = txtColor1
       replaceHtml("de")
       sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
+      sections.forEach(section => section.style.fontWeight = 400)
       break;
     case "ru-btn":
       ruBtn.style.color = txtColor1
       replaceHtml("ru")
       sections.forEach(section => section.style.fontFamily = "'Cabin Condensed', sans-serif")
+      sections.forEach(section => section.style.fontWeight = 700)
       break;
   }
 }

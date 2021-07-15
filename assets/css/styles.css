@@ -58,7 +58,7 @@ header{
 header button, header a, header span{
   all: unset;
   font-size: 24px;
-  font-weight: regular;
+  font-weight: 400;
   color:var(--txt-color-2);
 }
 
@@ -81,7 +81,7 @@ header button:hover, header a:hover{
 }
 
 nav{
-  width:100%;
+  width:95%;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -91,6 +91,7 @@ nav{
 .lang-switch{
   min-width:95px;
   align-self: flex-end;
+  font-family: 'Londrina Solid', cursive !important;
 }
 
 .lang-switch button, .lang-switch span{
