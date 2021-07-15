@@ -211,6 +211,11 @@ nav{
   cursor:text
 }
 
+#contact-message::placeholder{
+  color: var(--txt-color-1);
+  opacity: 1;
+}
+
 
 #contact-file{
   all:unset;
