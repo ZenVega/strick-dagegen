@@ -1,5 +1,6 @@
 // LANGUAGE SWITCH
 
+const sections = document.querySelectorAll('.section')
 const engBtn = document.querySelector('#eng-btn')
 const ruBtn = document.querySelector('#ru-btn')
 const deBtn = document.querySelector('#de-btn')
@@ -7,7 +8,7 @@ const langBtns = [engBtn, ruBtn, deBtn]
 
 
 const aboutBtn = document.querySelector('#about-btn')
-const galeryBtn = document.querySelector('#galery-btn')
+const galleryBtn = document.querySelector('#gallery-btn')
 const contactBtn = document.querySelector('#contact-btn')
 const impressumBtn = document.querySelector('#impressum-btn')
 
@@ -26,41 +27,36 @@ const contactSend = document.querySelector("#contact-send")
 const contactMessage = document.querySelector("#contact-message")
 
 
-
-
-
-
-
-
-
 const switchLanguage = (target) => {
 
   langBtns.forEach(btn => {
     btn.style.color = txtColor2
   })
-
+  
   const id = target.id
   switch (id) {
     case "eng-btn":
       engBtn.style.color = txtColor1
       replaceHtml("eng")
+      sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
       break;
     case "de-btn":
       deBtn.style.color = txtColor1
       replaceHtml("de")
+      sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
       break;
     case "ru-btn":
       ruBtn.style.color = txtColor1
       replaceHtml("ru")
+      sections.forEach(section => section.style.fontFamily = "'Cabin Condensed', sans-serif")
       break;
-
   }
 }
 
 const replaceHtml = (lang) => {
   aboutTxt.innerHTML = langPack[lang].about
   aboutBtn.innerHTML = langPack[lang].buttons.about
-  galeryBtn.innerHTML = langPack[lang].buttons.galery
+  galleryBtn.innerHTML = langPack[lang].buttons.galery
   contactBtn.innerHTML = langPack[lang].buttons.contact
   impressumBtn.innerHTML = langPack[lang].buttons.impressum
   projectSectionTitle.innerHTML = langPack[lang].projectSectionTitle

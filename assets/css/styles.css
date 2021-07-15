@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap');
 
 :root {
   --bg-color-1: #333; 
   --bg-color-2:#333;
   --txt-color-1:#FFFDFD;
   --txt-color-2:#333;
+  --txt-color-hover:#FFFDFD;
 }
 
 *{
   box-sizing: border-box;
   margin:0;
   padding:0;
-  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
 }
 
@@ -26,7 +28,7 @@ h1{
 
 .content-wrapper{
   margin:0 auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 /* PREVIEW SECTION  */
@@ -50,7 +52,7 @@ header{
   justify-content: space-between;
   position:absolute;
   top:20px;
-  width: 80%;
+  width: 85vw;
 }
 
 header button, header a, header span{
@@ -58,12 +60,15 @@ header button, header a, header span{
   font-size: 24px;
   font-weight: regular;
   color:var(--txt-color-2);
-  padding-left:10px;
+}
+
+header a{
+  padding-right:10px;
 }
 
 header button, header span{
   font-size: 12px;
-  padding-left:3px;
+  padding-right:3px;
   padding-top:4px;
 }
 
@@ -72,13 +77,15 @@ header button, header a{
 }
 
 header button:hover, header a:hover{
-  color:var(--txt-color-1);
+  color:var(--txt-color-hover);
 }
 
 nav{
   width:100%;
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  margin-right:120px;
 }
 
 .lang-switch{
@@ -91,7 +98,7 @@ nav{
 }
 
 #de-btn{
-  color:var(--txt-color-1);
+  color:var(--txt-color-hover);
 }
 
 
@@ -105,6 +112,7 @@ nav{
   margin-left:40%;
   margin-top:30px;
   color:var(--txt-color-1);
+  font-family: 'Londrina Solid', cursive !important;
 }
 
 /* DESCRIPTION SECTION */
@@ -199,8 +207,14 @@ nav{
   margin: 15px 0 10px 0;
 }
 
+#contact-name, #contact-mail, #contact-message{
+  cursor:text
+}
+
+
 #contact-file{
   all:unset;
+  cursor:pointer;
   border: 2px solid;
   padding:3px 6px;
   margin:5px;
@@ -214,6 +228,7 @@ nav{
 
 #contact-send{
   all:unset;
+  cursor:pointer;
   border:solid 2px;
   align-self: center;
   padding:3px 6px;
@@ -263,6 +278,7 @@ nav{
   #about-text{
     font-size: 20px;
   }
+
   header a{
     font-size: 20px;
   }
@@ -282,6 +298,10 @@ nav{
   header{
     width:90%;
   }
+
+  nav a{
+    font-size:17px;
+  }
   
   .impressum-section p:nth-of-type(1), .impressum-section p:nth-of-type(2){
     width:100%;
@@ -291,6 +311,7 @@ nav{
   }
 
   .preview-section-title{
-    margin-left:0;
+    margin-left:22%;
+    font-size:33px;
   }
 }
