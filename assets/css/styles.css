@@ -212,7 +212,7 @@ nav{
 }
 
 #contact-message::placeholder{
-  color: var(--txt-color-1);
+  color: var(--txt-color-2);
   opacity: 1;
 }
 
