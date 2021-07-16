@@ -38,18 +38,21 @@ const switchLanguage = (target) => {
   switch (id) {
     case "eng-btn":
       engBtn.classList.add("button-active")
+      impressumBtn.style.display = "block"
       replaceHtml("eng")
       sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
       sections.forEach(section => section.style.fontWeight = 400)
       break;
     case "de-btn":
       deBtn.classList.add("button-active")
+      impressumBtn.style.display = "block"
       replaceHtml("de")
       sections.forEach(section => section.style.fontFamily = "'Londrina Solid', cursive")
       sections.forEach(section => section.style.fontWeight = 400)
       break;
     case "ru-btn":
       ruBtn.classList.add("button-active")
+      impressumBtn.style.display = "none"
       replaceHtml("ru")
       sections.forEach(section => section.style.fontFamily = "'Cabin Condensed', sans-serif")
       sections.forEach(section => section.style.fontWeight = 700)
