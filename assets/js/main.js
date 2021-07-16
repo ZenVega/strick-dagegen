@@ -10,6 +10,7 @@ const langBtns = document.querySelectorAll('.lg-btn')
 const aboutBtn = document.querySelector('#about-btn')
 const galleryBtn = document.querySelector('#gallery-btn')
 const contactBtn = document.querySelector('#contact-btn')
+const impressumBtn = document.querySelector('#impressum-btn')
 
 
 const txtColor1 = '#FFFDFD'
@@ -61,6 +62,7 @@ const replaceHtml = (lang) => {
   aboutBtn.innerHTML = langPack[lang].buttons.about
   galleryBtn.innerHTML = langPack[lang].buttons.galery
   contactBtn.innerHTML = langPack[lang].buttons.contact
+  impressumBtn.innerHTML = langPack[lang].buttons.impressum
   projectSectionTitle.innerHTML = langPack[lang].projectSectionTitle
   contactHeader.innerHTML = langPack[lang].form.title
   contactName.innerHTML = langPack[lang].form.name + '<input type="text" name="name">'
