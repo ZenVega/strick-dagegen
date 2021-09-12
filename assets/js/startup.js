@@ -34,10 +34,14 @@ const changeStyle = id => {
     let imgArray = shuffledImages.map(id => {
       let img = document.createElement('img')
       img.src = `assets/images/img${id}.jpg`
+      img.idInPack = id
+      img.alt = imgPack[img.idInPack].alt["de"]
       return img
     })
     
     previewImage.src = imgArray[0].src
+    previewImage.idInPack = imgArray[0].idInPack
+    previewImage.alt = imgArray[0].alt
     
     for(i = 1; i <= 9; i++){
       imageWrapper.appendChild(imgArray[i])
