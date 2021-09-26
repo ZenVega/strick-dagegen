@@ -21,7 +21,7 @@ const langPack = {
     "about": "Ich war ungefähr 6 Jahre alt, als ich meinen ersten Puppenschal strickte. Es dauerte gefühlt eine Ewigkeit. Damit es schneller geht, versuchte ich den Schal nach jeder neuen Reihe in die Länge zu ziehen, aber er zog sich wieder zusammen...<br><br>Wer hätte damals gedacht, welche Faszination und Leidenschaft für Maschen und Nadeln mich später mitreißen wird. Ich liebe es, mit Wolle zu experimentieren, eigene Objekte zu kreieren. Die Stadt Berlin gibt meiner Fantasie und meinem Humor laufend neues \"Futter\", ein kleines Skizzenbuch für neue Ideen ist mein treuer Begleiter.<br><br> Ich bin offen für individuelle Anfertigungen und habe damit bereits einige Erfahrungen gesammelt, insbesondere im Bereich Therapie mit Kindern. Du kannst gerne Kontakt zu mir aufnehmen.",
     "buttons":{
       "about":"über",
-      "galery":"gallerie",
+      "galery":"galerie",
       "contact":"kontakt",
       "impressum":"impressum"
     },
