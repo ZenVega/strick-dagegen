@@ -28,9 +28,7 @@ const contactMessage = document.querySelector("#contact-message")
 
 
 const switchLanguage = (target) => {
-
   langBtns.forEach(btn => {
-    console.log(btn)
     btn.classList.remove("button-active")
   })
   
@@ -73,5 +71,12 @@ const replaceHtml = (lang) => {
   contactFile.innerHTML = langPack[lang].form.file + '<input  type="file" name="myfile">'
   contactSend.innerHTML = langPack[lang].form.send
   contactMessage.placeholder = langPack[lang].form.placeholder
+  const images = [...imageWrapper.childNodes]
+  images.shift()
+  images.forEach(img => {
+    img.alt = imgPack[img.idInPack].alt[lang]
+  })
+  previewImage.alt = imgPack[previewImage.idInPack].alt[lang]
+
 }
 langBtns.forEach(btn => btn.addEventListener('click', e => switchLanguage(e.target)))
