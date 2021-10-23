@@ -359,4 +359,8 @@ nav{
     margin-top: 1rem;
     margin-right: 1.5rem;
   }
+
+  .scroll-up-btn {
+    left: 20px;
+  }
 }
