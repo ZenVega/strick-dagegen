@@ -11,6 +11,7 @@ const aboutBtn = document.querySelector('#about-btn')
 const galleryBtn = document.querySelector('#gallery-btn')
 const contactBtn = document.querySelector('#contact-btn')
 const impressumBtn = document.querySelector('#impressum-btn')
+const scrollTopBtn = document.querySelector('.scroll-up-btn')
 
 
 const txtColor1 = '#FFFDFD'
@@ -79,4 +80,18 @@ const replaceHtml = (lang) => {
   previewImage.alt = imgPack[previewImage.idInPack].alt[lang]
 
 }
+
 langBtns.forEach(btn => btn.addEventListener('click', e => switchLanguage(e.target)))
+
+//DISPLAY SCROLL BTN
+
+window.addEventListener("scroll", () => {
+  const aboutPos = aboutTxt.offsetTop
+  const scrollPos = document.documentElement.scrollTop
+  if (scrollPos > aboutPos) {
+    scrollTopBtn.style.opacity = 1
+  } else {
+    scrollTopBtn.style.opacity = 0
+
+  }
+});

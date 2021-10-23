@@ -110,6 +110,7 @@ nav{
 
 .title-wrapper{
   width: 100%;
+  margin-top: 1rem;
   display:flex;
   align-items: flex-end;
   flex-direction: column;
@@ -125,6 +126,7 @@ nav{
   margin-top: 1rem;
   margin-right: calc(20% - 1rem);
 }
+
 .insta-logo img {
   width: 2rem;
 }
@@ -256,6 +258,17 @@ nav{
   margin:5px;
 }
 
+.scroll-up-btn {
+  transform: rotate(90deg);
+  font-size: 2rem;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  opacity: 0;
+  transition: opacity ease-in 150ms;
+  color: white;
+}
+
 /* IMPRESSUM SECTION */
 
 .impressum-section{
@@ -337,7 +350,13 @@ nav{
   }
 
   .preview-section-title{
-    margin-left:1rem;
-    font-size:33px;
+    margin-left:20%;
+    margin-right: 1rem;
+    font-size:30px;
+  }
+
+  .insta-logo {
+    margin-top: 1rem;
+    margin-right: 1.5rem;
   }
 }
