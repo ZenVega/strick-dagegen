@@ -108,11 +108,25 @@ nav{
   border-radius: 50%;
 }
 
-.preview-section-title{
-  margin-left:40%;
-  margin-top:30px;
+.title-wrapper{
+  width: 100%;
+  display:flex;
+  align-items: flex-end;
+  flex-direction: column;
   color:var(--txt-color-1);
   font-family: 'Londrina Solid', cursive !important;
+}
+
+.preview-section-title {
+  margin-right: 20%;
+}
+
+.insta-logo {
+  margin-top: 1rem;
+  margin-right: calc(20% - 1rem);
+}
+.insta-logo img {
+  width: 2rem;
 }
 
 /* DESCRIPTION SECTION */
@@ -316,7 +330,7 @@ nav{
   }
 
   .preview-section-title{
-    margin-left:22%;
+    margin-left:1rem;
     font-size:33px;
   }
 }
