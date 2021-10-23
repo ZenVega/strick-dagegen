@@ -145,6 +145,8 @@ nav{
 #about-text{
   width:70%;
   font-size: 30px;
+  font-weight: 800;
+  font-family: Cabin Condensed;
   margin: 0 auto;
   color:var(--txt-color-1);
 }
@@ -273,6 +275,11 @@ nav{
 
 .impressum-section p{
   margin-top:10px;
+  font-family: Cabin Condensed;
+}
+
+.impressum-section .linktext {
+  font-weight: 800;
 }
 
 .impressum-section p:nth-of-type(1){
